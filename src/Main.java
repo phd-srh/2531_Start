@@ -3,8 +3,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner eingabe = new Scanner(System.in);
-        System.out.println("Hallo, wer bist du: ");
-        String name = eingabe.nextLine();
-        System.out.println("Hallo, " + name);
+        System.out.print("Bitte eine Zahl eingeben: ");
+        int zahl = eingabe.nextInt();
+
+        System.out.println(zahl + " ist eine Primzahl");
+        System.out.println(zahl + " ist KEINE Primzahl");
     }
 }
