@@ -6,12 +6,18 @@ public class Main {
         System.out.print("Bitte eine Zahl eingeben: ");
         int zahl = eingabe.nextInt();
 
-        int teiler = 2;
-        while ( teiler <= zahl-1 ) {
-            // was auch immer hier passiert
-            System.out.println(teiler);
+        // so sieht eine while-Schleife zum Zählen aus
+//        int teiler = 2;
+//        while ( teiler <= zahl-1 ) {
+//            // was auch immer hier passiert
+//            System.out.println(teiler);
+//
+//            teiler = teiler + 1;
+//        }
 
-            teiler = teiler + 1;
+        // Zählschleife mit merkwürdiger Syntax
+        for ( int teiler = 2 ; teiler <= zahl-1 ; teiler = teiler + 1 ) {
+            System.out.println(teiler);
         }
 
 
