@@ -37,12 +37,16 @@ public class Main {
 
 
         // Zählschleife mit merkwürdiger Syntax
-//        for ( int teiler = 2 ; teiler <= zahl-1 ; teiler = teiler + 1 ) {
-//            System.out.println(teiler);
-//        }
+        for ( int teiler = 2 ; teiler <= zahl-1 ; teiler++ ) {
+            int rest = zahl % teiler;
 
+            if ( rest == 0 ) {
+                System.out.println(zahl + " ist KEINE Primzahl");
+                // Programm beenden, Lösung bereits gefunden
+                return;
+            }
+        }
 
         System.out.println(zahl + " ist eine Primzahl");
-        System.out.println(zahl + " ist KEINE Primzahl");
     }
 }
